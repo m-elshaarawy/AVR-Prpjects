@@ -79,6 +79,7 @@ void FireAlarAPP_start(void){
 				 }
 				 
 			 }
+			// __asm__ __volatile__ ("jmp 0");  to reset MCU ---------------------------->
 			LCD_GoToWriteString(0,0,"                  ");
 			DIO_WritePin(RED_LED,LOW); 
 			INPUT[0]='0'; // reset INPUT
